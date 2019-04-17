@@ -1,0 +1,11 @@
+<h1>Select your starting units!</h1>
+<h3><span id="choicesLeft">5</span> picks left!</h3>
+<div id="unitCardsFlex">
+    {{#each units}}
+        <div class="unitCard" data-name={{name}} data-selected='false' data-level={{created_at}} data-class={{language}}>
+            <h3>name: {{name}}</h3>
+            <h5>level: {{created_at}}</h5>
+            <h5>class: {{language}}</h5>
+        </div>
+    {{/each}}
+</div>
