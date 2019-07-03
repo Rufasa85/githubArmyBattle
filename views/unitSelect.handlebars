@@ -1,0 +1,14 @@
+<h1>Select your starting units!</h1>
+<h3><span id="choicesLeft">{{age}}</span> picks left!</h3>
+<div id="unitCardsFlex">
+    {{#each units}}
+        <div class="unitCard" data-name="{{name}}" data-selected='false' data-level={{parsedAge}} data-class="{{unitClass}}">
+            <h3>name: {{name}}</h3>
+            <h5>level: {{parsedAge}}</h5>
+            <h5>lang: {{language}}</h5>
+            <h5>class: {{unitClass}}</h5>
+            <p>{{joe}}</p>
+        </div>
+    {{/each}}
+    <button id = 'formArmyButton' disabled="false">Form Army!</button>
+</div>
